@@ -21,8 +21,6 @@ testOffline()
 
 
 const mutationsOfInterest = [
-  'shopping/setProducts',
-  'customerPlateNumbers/setPlateNumbers',
 ];
 
 const ofInterest = (mutation) => {

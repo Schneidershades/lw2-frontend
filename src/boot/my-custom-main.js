@@ -7,7 +7,7 @@ export default async ({ app, router, store, Vue }) => {
   	// something to do
   	axios.defaults.withCredentials = true
   	// axios.defaults.baseURL = 'https://api.parkit.ng'
-  	axios.defaults.baseURL = 'http://localhost:8000/'
+  	axios.defaults.baseURL = 'https://l2w-backend.herokuapp.com/'
   	try{
   		if(process.env.MODE != 'ssr'){
   		}

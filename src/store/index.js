@@ -10,15 +10,10 @@ import *  as mutations from './mutations'
 import *  as actions from './actions'
 
 import auth from './modules/auth/auth'
-
 import errorbag from './modules/general/errorbag'
 import internetStatus from './modules/general/internetStatus'
 import schedule from './modules/schedule'
 import quiz from './modules/quiz'
-
-
-import users from './modules/desktop/users'
-import dashboard from './modules/share/dashboard'
 
 export default new Vuex.Store({
 	state,
@@ -47,7 +42,7 @@ export default new Vuex.Store({
 
 
 
-require('./modules/desktop/dispatchApi/subscriber.js')
-require('./modules/desktop/dispatchApi/persistencePlugin.js')
-require('./modules/desktop/dispatchApi/roles.js')
+require('./modules/auth/subscriber.js')
+require('./modules/auth/persistencePlugin.js')
+require('./modules/auth/roles.js')
 // require('./modules/auth/prefetchData.js')
